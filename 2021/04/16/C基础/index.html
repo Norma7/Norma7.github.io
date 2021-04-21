@@ -9,7 +9,7 @@
     
     <title>
         
-            Hi！ |
+            C基础 |
         
         尼伯龙根·0号公路
     </title>
@@ -117,7 +117,7 @@
     <div class="article-content-container">
 
         <div class="article-title">
-            <span class="title-hover-animation">Hi！</span>
+            <span class="title-hover-animation">C基础</span>
         </div>
 
         
@@ -135,7 +135,7 @@
                     <div class="meta-info">
                         <div class="article-meta-info">
     <span class="article-date article-meta-item">
-        <i class="fas fa-edit"></i>&nbsp;2021-03-13 19:15:25
+        <i class="fas fa-edit"></i>&nbsp;2021-04-16 23:56:32
     </span>
     
     
@@ -152,8 +152,7 @@
         
 
         <div class="article-content markdown-body">
-            <p>我是废物.jpg</p>
-<p>And when the thousand years are expired, Satan shall be loosed out of his prison, And shall go out to deceive the nations which are in the four quarters of the earth, Gog and Magog, to gather them together to battle: the number of whom is as the sand of the sea. And they went up on the breadth of the earth, and compassed the camp of the saints about, and the beloved city <a class="link"   target="_blank" rel="noopener" href="https://huiliyi.top/" >返回首页<i class="fas fa-external-link-alt"></i></a> </p>
+            <p>1.入门程序<br>#include &lt;stdio.h&gt;<br>int main()<br>{<br> printf(“Hello World!”);<br> return 0;<br>}<br>2.数据类型<br>数据类型:<br>1.基本数据类型：<br>1.1. 整型:int 4个字节<br>1.2. 字符型:char 1个字节<br>1.3. 实型(浮点型)<br>1.3.1.单精度型:float 4个字节<br>1.3.2.双精度型:double 8个字节<br>2.构造类型：<br>2.1.枚举类型<br>2.2.数组类型<br>2.3.结构体类型<br>2.4.共用体类型<br>3.指针类型：<br>4.空类型：<br>3.格式化输出语句<br>%d:十进制整数;<br>%c:单个字符;<br>%s:字符串;<br>%f:6位小数;<br>#include &lt;stdio.h&gt;<br>int main()<br>{<br> int age = 18;<br> float height = 1.85;<br> char unit = ‘m’;<br> printf(“小明今年%d岁\n”, age);<br> printf(“小明身高%f%c\n”, height, unit);<br> printf(“小明现在在慕课网上学习IT技术\n”);<br> return 0;<br>}<br>4.常量<br>值不发生改变的量成为常量;<br>定义字符常量(注意后面没有;)<br>#include &lt;stdio.h&gt;<br>#define POCKETMONEY 10 //定义常量及常量值<br>int main()<br>{<br> printf(“小明今天又得到%d元零花钱\n”, POCKETMONEY);<br> return 0;<br>}<br>5.运算符<br>5.1.算数运算符:+,-,<em>,/,%,++,–;前++/–,先运算,再取值.后++/–,先取值,再运算;<br>5.2.赋值运算符:<br>5.3.关系运算符;<br>5.4.逻辑运算符;<br>5.5.三目运算符:<br>表达式1 ? 表达式2 : 表达式3;<br>6.水仙花数计算<br>输出所有三位数的水仙花数字<br>所谓“水仙花数”是指一个三位数，其各位数字立方和等于该数，如：153就是一个水仙花数，153=111+555+333。<br>#include &lt;stdio.h&gt;<br>int main()<br>{<br> //定义三位数num,个位数sd,十位数td,百位数hd<br> int num, sd, td, hd;<br> //循环所有三位数<br> for( num=100 ; num&lt;1000 ; num++ )<br> {<br>  //获取三位数字num百位上的数字<br>  hd = num/100 ;<br>  //获取三位数字num十位上的数字<br>  td = num/10%10 ;<br>  //获取三位数字num个位上的数字<br>  sd = num%10 ;<br>  //水仙花数的条件是什么？<br>  if(num ==hd*hd*hd+td*td*td+sd*sd*sd )<br>  {<br>   printf(“水仙花数字：%d\n”, num);<br>  }<br> }<br> return 0;<br>}<br>7.打印正三角形的*<br>#include &lt;stdio.h&gt;<br>int main()<br>{<br> int i, j, k;<br> for(i=1; i&lt;5; i++)<br> {<br>  /</em> 观察每行的空格数量，补全循环条件 <em>/<br>  for( j=i ; j&lt;5 ; j++ )<br>  {<br>   printf(“ “); //输出空格<br>  }<br>  /</em> 观察每行<em>号的数量，补全循环条件 <em>/<br>  for( k=0 ; k&lt;2</em>i-1 ; k++ )<br>  {<br>   printf(“</em>“); //每行输出的*号<br>  }<br>  printf(“\n”); //每次循环换行<br> }<br> return 0;<br>}</p>
 
         </div>
 
@@ -165,18 +164,33 @@
                     <div class="article-prev">
                         <a class="prev"
                            rel="prev"
-                           href="/2021/04/16/C%E5%9F%BA%E7%A1%80/"
+                           href="/2021/04/19/%E9%9A%8F%E7%AC%94/"
                         >
                             <span class="left arrow-icon flex-center">
                               <i class="fas fa-chevron-left"></i>
                             </span>
                             <span class="title flex-center">
-                                <span class="post-nav-title-item">C基础</span>
+                                <span class="post-nav-title-item">随笔</span>
                                 <span class="post-nav-item">Prev posts</span>
                             </span>
                         </a>
                     </div>
                 
+                
+                    <div class="article-next">
+                        <a class="next"
+                           rel="next"
+                           href="/2021/03/13/hello-world/"
+                        >
+                            <span class="title flex-center">
+                                <span class="post-nav-title-item">Hi！</span>
+                                <span class="post-nav-item">Next posts</span>
+                            </span>
+                            <span class="right arrow-icon flex-center">
+                              <i class="fas fa-chevron-right"></i>
+                            </span>
+                        </a>
+                    </div>
                 
             </div>
         
